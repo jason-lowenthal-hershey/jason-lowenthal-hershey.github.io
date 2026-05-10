@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="dark light" />
+  <meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)" />
+
+  <title>Jason Lowenthal-Hershey — Staff Software Engineer, Architect, Maker</title>
+  <meta name="description" content="Jason Lowenthal-Hershey is a Staff Software Engineer at Codefi in Springfield, MO — building the technical foundation for Traction Studio AI, mentoring engineers, writing about the craft, and making art on the side." />
+  <meta name="author" content="Jason Lowenthal-Hershey" />
+  <link rel="canonical" href="https://jason-lowenthal-hershey.github.io/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Jason Lowenthal-Hershey" />
+  <meta property="og:description" content="Staff Software Engineer at Codefi. Architect, mentor, writer, artist. Springfield, MO." />
+  <meta property="og:url" content="https://jason-lowenthal-hershey.github.io/" />
+  <meta property="og:site_name" content="Jason Lowenthal-Hershey" />
+  <meta property="profile:first_name" content="Jason" />
+  <meta property="profile:last_name" content="Lowenthal-Hershey" />
+
+  <meta property="og:image" content="https://jason-lowenthal-hershey.github.io/assets/img/Jason%20Lowenthal-Hershey.jpeg" />
+  <meta property="og:image:alt" content="Portrait of Jason Lowenthal-Hershey" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jason Lowenthal-Hershey",
+    "jobTitle": "Staff Software Engineer",
+    "email": "mailto:jason.m.lowenthal@gmail.com",
+    "worksFor": { "@type": "Organization", "name": "Codefi" },
+    "url": "https://jason-lowenthal-hershey.github.io/",
+    "address": { "@type": "PostalAddress", "addressLocality": "Springfield", "addressRegion": "MO", "addressCountry": "US" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Drury University" },
+    "sameAs": [
+      "https://www.linkedin.com/in/jasonlowenthal/",
+      "https://github.com/jason-lowenthal-hershey",
+      "https://github.com/jason-codefi",
+      "https://medium.com/@lowenthal_jason",
+      "https://www.deviantart.com/yodajstarwars",
+      "https://www.youtube.com/watch?v=T0V77fauPL8"
+    ]
+  }
+  </script>
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="mask-icon" href="assets/img/favicon.svg" color="#f2a060" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-elevated="false">
+    <div class="container nav-row">
+      <a href="#top" class="brand" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true">JL<span class="brand-mark-h">H</span></span>
+        <span class="brand-name">Jason Lowenthal-Hershey</span>
+      </a>
+      <nav class="primary-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#writing">Writing</a>
+        <a href="#speaking">Speaking</a>
+        <a href="#art">Art</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" type="button" id="themeToggle" aria-label="Toggle color theme" aria-pressed="true">
+        <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.93 4.93l2.12 2.12M16.95 16.95l2.12 2.12M4.93 19.07l2.12-2.12M16.95 7.05l2.12-2.12"/></svg>
+        <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/></svg>
+      </button>
+      <button class="nav-toggle" type="button" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#writing">Writing</a>
+      <a href="#speaking">Speaking</a>
+      <a href="#art">Art</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section id="top" class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-grid"></div>
+        <div class="hero-glow"></div>
+      </div>
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">
+            <span class="dot"></span> Staff Software Engineer · Codefi · Springfield, MO
+          </p>
+          <h1 class="hero-title">
+            Building software that <em>actually</em> ships,<br />
+            and lifting up the people who build it.
+          </h1>
+          <p class="hero-lede">
+            I'm Jason — an architect, mentor, and lifelong builder. I lead the engineering behind
+            <a href="#projects">Traction Studio AI</a>, write about the craft and the cost of
+            <a href="#writing">doing it well</a>, and spend my off-hours
+            <a href="#art">making things by hand</a>.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#contact">
+              Get in touch
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="#experience">See my experience</a>
+          </div>
+          <ul class="hero-socials" aria-label="Social profiles">
+          <li><a href="https://www.linkedin.com/in/jasonlowenthal/" rel="me noopener" target="_blank" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 .04 5 2.5 2.5 0 0 1-.04-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.3-.02-2.97-1.81-2.97-1.81 0-2.09 1.4-2.09 2.87V21h-4z"/></svg></a></li>
+          <li><a href="https://github.com/jason-lowenthal-hershey" rel="me noopener" target="_blank" aria-label="Personal GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12.05c0 5.1 3.3 9.4 7.9 10.93.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.4-3.88-1.4-.53-1.34-1.3-1.7-1.3-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.72 1.27 3.38.97.1-.76.4-1.27.74-1.56-2.55-.3-5.24-1.28-5.24-5.7 0-1.26.45-2.3 1.18-3.1-.12-.3-.51-1.48.11-3.08 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.5 3.18-1.18 3.18-1.18.62 1.6.23 2.78.11 3.08.74.8 1.18 1.84 1.18 3.1 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.06.78 2.14v3.18c0 .31.2.67.8.55A10.6 10.6 0 0 0 23.5 12C23.5 5.7 18.3.5 12 .5z"/></svg></a></li>
+          <li><a href="https://github.com/jason-codefi" rel="me noopener" target="_blank" aria-label="Codefi GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12.05c0 5.1 3.3 9.4 7.9 10.93.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.4-3.88-1.4-.53-1.34-1.3-1.7-1.3-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.72 1.27 3.38.97.1-.76.4-1.27.74-1.56-2.55-.3-5.24-1.28-5.24-5.7 0-1.26.45-2.3 1.18-3.1-.12-.3-.51-1.48.11-3.08 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.5 3.18-1.18 3.18-1.18.62 1.6.23 2.78.11 3.08.74.8 1.18 1.84 1.18 3.1 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.06.78 2.14v3.18c0 .31.2.67.8.55A10.6 10.6 0 0 0 23.5 12C23.5 5.7 18.3.5 12 .5z"/></svg></a></li>
+          <li><a href="https://medium.com/@lowenthal_jason" rel="me noopener" target="_blank" aria-label="Medium"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 5.5h19v13h-19zM7.4 8.6c0-.21-.08-.4-.24-.55l-1.7-2.05V6h5.27l4.07 8.95L18.4 6h5v.05L21.93 7.4a.43.43 0 0 0-.16.4v9.4c0 .15.05.29.16.4l1.42 1.36V19h-7.13v-.04l1.47-1.4c.14-.13.14-.18.14-.4V9.55l-4.1 10.4h-.55l-4.78-10.4v6.97c-.04.3.06.6.27.82l1.92 2.34v.04H4.16v-.04l1.92-2.34c.2-.22.3-.52.26-.82V8.6z"/></svg></a></li>
+          <li><a href="https://www.deviantart.com/yodajstarwars" rel="me noopener" target="_blank" aria-label="DeviantArt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.207 4.794v-2.59h-5.422l-.529.529-1.696 3.244-.529.353H4.793v6.353l.353.353h3.882l.353.353-4.588 8.6v2.117h5.422l.529-.529 1.696-3.244.529-.353h7.238v-6.353l-.353-.353h-3.882l-.353-.353 4.588-8.6z"/></svg></a></li>
+          <li><a href="https://www.youtube.com/watch?v=T0V77fauPL8" rel="me noopener" target="_blank" aria-label="YouTube talk"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.5 12 4.5 12 4.5s-7 0-8.9.6A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12 31 31 0 0 0 1 16.8a3 3 0 0 0 2.1 2.1c1.9.6 8.9.6 8.9.6s7 0 8.9-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 23.5 12 31 31 0 0 0 23 7.2zM9.75 15.5v-7l6 3.5z"/></svg></a></li>
+          </ul>
+        </div>
+        <div class="hero-portrait">
+          <div class="portrait-frame">
+            <img
+              src="assets/img/Jason%20Lowenthal-Hershey.jpeg"
+              alt="Portrait of Jason Lowenthal-Hershey"
+              width="460" height="460"
+              loading="eager"
+              decoding="async" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-num">01</span>
+          <h2>About</h2>
+          <p class="section-sub">A multi-faceted technologist who chooses tools to fit the job, not the other way around.</p>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-prose">
+            <p>
+              I've spent the better part of two decades building production software — from
+              hierarchical pricing services and supply-chain platforms to research-grade
+              assessments and, most recently, an AI-powered startup accelerator. My current
+              focus is technical leadership and architecture inside large organizations:
+              taking ambiguous problems, breaking them into shippable pieces, and helping
+              teams move faster than they thought they could.
+            </p>
+            <p>
+              I work in whatever stack the problem calls for. I came up in the Java world,
+              spent years in REST API design, ran through plenty of front-end and infra,
+              and these days I'm shipping AI-native systems at <a href="https://codefiworks.com" target="_blank" rel="noopener">Codefi</a>.
+              The constant across all of it isn't a language or a framework — it's a belief
+              that good software comes from people who feel safe enough to be honest with
+              each other.
+            </p>
+            <blockquote class="pullquote">
+              <p>"A rising tide raises all boats — and it's important to me that the people I work with are excited to grow, contribute, and collaborate every day."</p>
+            </blockquote>
+            <p>
+              Outside the codebase: I write about the craft (and about
+              <a href="#speaking">mental health for developers</a>, which I've been open about
+              since 2016), I draw and paint when I can, I'm raising three daughters who
+              keep me grounded, and I mentor wherever I can be useful.
+            </p>
+          </div>
+
+          <aside class="about-side">
+            <div class="card">
+              <h3>Principles</h3>
+              <ul class="bullets">
+                <li><strong>Ship.</strong> Code that isn't in production isn't worth anything yet.</li>
+                <li><strong>Lift.</strong> The senior engineer's job is making the team better, not just the code.</li>
+                <li><strong>Honesty.</strong> Including about the parts that are hard — burnout, depression, mistakes.</li>
+                <li><strong>Right tool.</strong> No tribal loyalty to languages or frameworks.</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>What I'm working in</h3>
+              <ul class="chip-list">
+                <li>Architecture</li>
+                <li>Java / JVM</li>
+                <li>TypeScript</li>
+                <li>REST &amp; APIs</li>
+                <li>AI / LLM systems</li>
+                <li>Cloud platforms</li>
+                <li>Mentorship</li>
+                <li>Tech leadership</li>
+              </ul>
+            </div>
+            <div class="card facts">
+              <dl>
+                <div><dt>Based</dt><dd>Springfield, MO</dd></div>
+                <div><dt>Role</dt><dd>Staff Software Engineer, Codefi</dd></div>
+                <div><dt>Building</dt><dd>Traction Studio AI</dd></div>
+                <div><dt>Reach</dt><dd><a href="mailto:jason.m.lowenthal@gmail.com">jason.m.lowenthal@gmail.com</a></dd></div>
+              </dl>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-num">02</span>
+          <h2>Experience</h2>
+          <p class="section-sub">A path through enterprise systems, edu-tech, advanced manufacturing, and now AI.</p>
+        </header>
+
+        <ol class="timeline">
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <p class="timeline-meta"><span class="timeline-date">Current</span> · Springfield, MO</p>
+              <h3>Staff Software Engineer · <span class="company">Codefi</span></h3>
+              <p>
+                Technical lead behind <strong>Traction Studio AI</strong> — Codefi's AI-powered
+                startup accelerator that turns founder ideas into validated, fundable
+                ventures. I own the architecture, set the engineering bar, and bring
+                a diverse stack history to a local organization where the work
+                actually moves the needle.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <p class="timeline-meta"><span class="timeline-date">Prior</span></p>
+              <h3>Lead Software Engineer · <span class="company">World Wide Technology</span></h3>
+              <p>
+                Tech lead and senior engineer across enterprise commercial, public-sector,
+                and telecom service-provider systems at one of the largest privately-held
+                technology integrators in the country. Architected and led teams on
+                supply-chain and integration platforms.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <p class="timeline-meta"><span class="timeline-date">Prior</span></p>
+              <h3>Principal Software Architect · <span class="company">True Velocity</span></h3>
+              <p>
+                Led architecture for advanced manufacturing software at True Velocity
+                Ammunition. Bridged the gap between manufacturing-floor reality and
+                modern software practice — measurement, traceability, and integration.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <p class="timeline-meta"><span class="timeline-date">Prior</span></p>
+              <h3>Advanced Software Engineer · <span class="company">Skyfactor (Macmillan Learning)</span></h3>
+              <p>
+                Built research-grade program assessment and benchmarking products used by
+                higher-ed institutions. Helped translate decades of education research
+                into software educators could actually use.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <p class="timeline-meta"><span class="timeline-date">Earlier</span></p>
+              <h3>Software Engineer · <span class="company">Asynchrony Labs &amp; earlier roles</span></h3>
+              <p>
+                Pair programming, XP practices, and team sticker art (yes, really —
+                see the <a href="https://www.deviantart.com/yodajstarwars" rel="noopener" target="_blank">"Team Sorting Hat"</a>
+                piece in the art section). The years that taught me how a healthy
+                engineering culture actually feels.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-num">03</span>
+          <h2>Selected Work</h2>
+          <p class="section-sub">A handful of the things I've shipped or helped build.</p>
+        </header>
+
+        <div class="project-grid">
+
+          <article class="project-card project-feature">
+            <div class="project-tag">Now</div>
+            <h3>Traction Studio AI</h3>
+            <p class="project-org">Codefi</p>
+            <p>
+              An AI-powered startup accelerator that compresses the discovery,
+              validation, and packaging work of a traditional studio engagement
+              into a continuously-running, founder-driven loop. I lead the
+              engineering — architecture, model orchestration, and the
+              workflow that turns LLM output into investable artifacts.
+            </p>
+            <ul class="chip-list compact">
+              <li>LLM orchestration</li>
+              <li>Workflow design</li>
+              <li>Architecture</li>
+            </ul>
+            <p><a class="link-arrow" href="https://app.tractionstudio.ai/" target="_blank" rel="noopener">Open Traction Studio AI →</a></p>
+          </article>
+
+          <article class="project-card">
+            <div class="project-tag">Past</div>
+            <h3>Hierarchical Pricing Service</h3>
+            <p class="project-org">Earlier role</p>
+            <p>
+              A RESTful pricing-management service over a Store / District / Region /
+              Division / Corporate hierarchy. JAXB and XStream for the wire formats,
+              Gradle &amp; Tomcat for delivery, JUnit for the safety net.
+            </p>
+            <ul class="chip-list compact">
+              <li>Java</li>
+              <li>REST</li>
+              <li>JAXB</li>
+              <li>JUnit</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-tag">Speaking</div>
+            <h3>Debugging My Depression</h3>
+            <p class="project-org">AIC 2018</p>
+            <p>
+              A vulnerable, public talk about clinical depression in the
+              software industry — what the symptoms actually look like, the
+              strategies that have worked for me, and why our profession
+              gets hit hard. Delivered live; recording on YouTube.
+            </p>
+            <p><a class="link-arrow" href="#speaking">Watch the talk →</a></p>
+          </article>
+
+          <article class="project-card">
+            <div class="project-tag">Volunteer</div>
+            <h3>Lunch Buddy Mentor</h3>
+            <p class="project-org">Big Brothers Big Sisters of the Ozarks</p>
+            <p>
+              Weekly one-on-one lunches with an elementary-school student over
+              two years. Small, consistent presence — the kind of mentorship
+              that doesn't feel like much in any one week but compounds.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- WRITING -->
+    <section id="writing" class="section section-alt">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-num">04</span>
+          <h2>Writing</h2>
+          <p class="section-sub">A decade of essays on programming, careers, and the unsexy human parts of engineering.</p>
+        </header>
+
+        <div class="writing-cluster">
+          <h3 class="cluster-title">On Medium</h3>
+          <ul class="article-list">
+            <li><a href="https://medium.com/@lowenthal_jason" target="_blank" rel="noopener"><span class="art-title">Mental Health for Developers</span><span class="art-meta">Panel · Jan 2018</span><span class="art-desc">A panel discussion with Heather Downing and Arthur Doler on mental wellness in the software field.</span></a></li>
+            <li><a href="https://medium.com/@lowenthal_jason" target="_blank" rel="noopener"><span class="art-title">Brain Olympics</span><span class="art-meta">Essay · Feb 2018</span><span class="art-desc">On competition, athletic and otherwise, and what watching the Winter Olympics surfaces about how we measure ourselves.</span></a></li>
+            <li><a href="https://medium.com/@lowenthal_jason" target="_blank" rel="noopener"><span class="art-title">The Winter Blues</span><span class="art-meta">Essay · Feb 2018</span><span class="art-desc">Finding the beauty of winter when you change the angle you're looking from.</span></a></li>
+            <li><a href="https://medium.com/@lowenthal_jason" target="_blank" rel="noopener"><span class="art-title">Programming Languages for President</span><span class="art-meta">Essay · Sep 2016</span><span class="art-desc">Opening with a Stroustrup quote and going from there. On preference, complaints, and what we're really arguing about.</span></a></li>
+            <li><a href="https://medium.com/@lowenthal_jason" target="_blank" rel="noopener"><span class="art-title">Key/Value Pairs</span><span class="art-meta">Tech · Feb 2016</span><span class="art-desc">A technical look at JSON structure and how key-value pairs get represented in the wild.</span></a></li>
+            <li><a href="https://medium.com/@lowenthal_jason" target="_blank" rel="noopener"><span class="art-title">Complex Table Data</span><span class="art-meta">Tech · Feb 2016</span><span class="art-desc">Team approaches for representing large object graphs in service data.</span></a></li>
+            <li><a href="https://medium.com/@lowenthal_jason" target="_blank" rel="noopener"><span class="art-title">Serial(ization) Killer</span><span class="art-meta">Tech · Jan 2016</span><span class="art-desc">Transforming JSON documents into object graphs and back, without losing your mind.</span></a></li>
+            <li><a href="https://medium.com/@lowenthal_jason" target="_blank" rel="noopener"><span class="art-title">What's In a Name?</span><span class="art-meta">Tech · Jan 2016</span><span class="art-desc">API conventions and the surprisingly hard art of naming routes well.</span></a></li>
+            <li><a href="https://medium.com/@lowenthal_jason" target="_blank" rel="noopener"><span class="art-title">Deadlines</span><span class="art-meta">Personal · Sep 2015</span><span class="art-desc">A reflection on missing a publishing deadline because real life got in the way.</span></a></li>
+          </ul>
+          <p class="cluster-foot"><a class="link-arrow" href="https://medium.com/@lowenthal_jason" target="_blank" rel="noopener">All posts on Medium →</a></p>
+        </div>
+
+        <div class="writing-cluster">
+          <h3 class="cluster-title">For Simple Programmer <span class="badge" title="Original publisher rewrote bylines on guest posts in a later CMS migration; the work below is mine.">byline note</span></h3>
+          <p class="cluster-note">
+            I wrote a run of guest pieces for Simple Programmer between 2015 and 2017.
+            The site has since rewritten the bylines on those posts, but the work
+            and the words below are mine — and I'm proud of them.
+          </p>
+          <ul class="article-list">
+            <li><a href="https://simpleprogrammer.com/programmers-great-clinical-depression/" target="_blank" rel="noopener"><span class="art-title">The Programmer's Great Clinical Depression</span><span class="art-meta">Essay · Oct 2016</span><span class="art-desc">Six evidence-based strategies for programmers fighting depression — from someone who lives with it.</span></a></li>
+            <li><a href="https://simpleprogrammer.com/teaching-kids-programming/" target="_blank" rel="noopener"><span class="art-title">Teaching Kids Programming with Robots and Toys</span><span class="art-meta">Tech · Jun 2017</span><span class="art-desc">What happened when I taught my three daughters to code with Dash &amp; Dot, Scratch Jr., and a lot of patience.</span></a></li>
+            <li><a href="https://simpleprogrammer.com/pair-programming/" target="_blank" rel="noopener"><span class="art-title">Better Together: The Benefits of Pair Programming</span><span class="art-meta">Tech · Jun 2017</span><span class="art-desc">How pairing improves quality, catches errors faster, and breaks up knowledge silos.</span></a></li>
+            <li><a href="https://simpleprogrammer.com/new-job/" target="_blank" rel="noopener"><span class="art-title">I Got a New Job</span><span class="art-meta">Career · Dec 2016</span><span class="art-desc">Five jobs in 8.5 years, a 270% jump in earnings, and what I learned about culture, networks, and writing in public.</span></a></li>
+            <li><a href="https://simpleprogrammer.com/moneycode-really-worth/" target="_blank" rel="noopener"><span class="art-title">MoneyCode: What Are You Really Worth?</span><span class="art-meta">Career · May 2016</span><span class="art-desc">A real-estate analogy for why shipping fast and well is what actually compounds your value.</span></a></li>
+            <li><a href="https://simpleprogrammer.com/children-get-it-right/" target="_blank" rel="noopener"><span class="art-title">Sometimes, Children Really Get It Right</span><span class="art-meta">Essay · Jan 2016</span><span class="art-desc">What kids do naturally — express, imagine, take breaks — that engineering teams keep forgetting how to do.</span></a></li>
+            <li><a href="https://simpleprogrammer.com/altering-the-deal/" target="_blank" rel="noopener"><span class="art-title">Altering the Deal</span><span class="art-meta">Career · Nov 2015</span><span class="art-desc">Negotiation beyond salary: scope, alternatives, patience, and the win-win frame.</span></a></li>
+            <li><a href="https://simpleprogrammer.com/dont-go-chasing-waterfall/" target="_blank" rel="noopener"><span class="art-title">Don't Go Chasing Waterfall</span><span class="art-meta">Process · Nov 2015</span><span class="art-desc">Why Waterfall fails on software, and what a unified backlog plus tight feedback loops give you instead.</span></a></li>
+            <li><a href="https://simpleprogrammer.com/how-to-learn-from-a-novice/" target="_blank" rel="noopener"><span class="art-title">How to Learn From a Novice</span><span class="art-meta">Mentorship · Oct 2015</span><span class="art-desc">Mentoring junior developers as a mutual learning opportunity — brown-bag lunches, code review, pairing.</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPEAKING -->
+    <section id="speaking" class="section">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-num">05</span>
+          <h2>Speaking</h2>
+          <p class="section-sub">When the topic matters more than the comfort of staying silent.</p>
+        </header>
+
+        <div class="speaking-row">
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/T0V77fauPL8"
+              title="Debugging my Depression — AIC 2018"
+              frameborder="0"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+              loading="lazy"></iframe>
+          </div>
+          <div class="speaking-meta">
+            <h3>Debugging my Depression</h3>
+            <p class="speaking-event">AIC 2018</p>
+            <p>
+              A talk I gave about living with clinical depression as a working
+              software engineer. What it actually feels like day to day, the
+              symptoms that hide in plain sight, the strategies that have
+              helped me, and why I keep talking about it even when it's
+              uncomfortable: because somebody in the room is going through it
+              and might not say so.
+            </p>
+            <p>
+              If this talk lands for you, or for someone on your team — please
+              <a href="#contact">reach out</a>. I'm always glad to talk, and
+              I'm available to give a version of this for engineering teams.
+            </p>
+            <p><a class="link-arrow" href="https://www.youtube.com/watch?v=T0V77fauPL8" target="_blank" rel="noopener">Open on YouTube →</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ART -->
+    <section id="art" class="section section-alt">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-num">06</span>
+          <h2>Art &amp; Side Craft</h2>
+          <p class="section-sub">I'm a hobbyist working in varied media — digital, traditional, sticker design. The other half of my brain.</p>
+        </header>
+
+        <div class="art-grid">
+          <a class="art-card" href="https://www.deviantart.com/yodajstarwars" target="_blank" rel="noopener">
+            <h3>Team Sorting Hat</h3>
+            <p class="art-card-meta">Asynchrony Labs · Sticker design</p>
+            <p>Team identity art for an XP-style engineering shop.</p>
+          </a>
+          <a class="art-card" href="https://www.deviantart.com/yodajstarwars" target="_blank" rel="noopener">
+            <h3>Pear Programming</h3>
+            <p class="art-card-meta">Digital · Tech humor</p>
+            <p>A visual pun a pair programmer can love.</p>
+          </a>
+          <a class="art-card" href="https://www.deviantart.com/yodajstarwars" target="_blank" rel="noopener">
+            <h3>White Tailed Deer Drinking Water</h3>
+            <p class="art-card-meta">Digital · Wildlife</p>
+            <p>Quiet observation, painted in GIMP.</p>
+          </a>
+          <a class="art-card" href="https://www.deviantart.com/yodajstarwars" target="_blank" rel="noopener">
+            <h3>Tribute to a Hero</h3>
+            <p class="art-card-meta">Digital · Portrait</p>
+            <p>One of the personal pieces.</p>
+          </a>
+          <a class="art-card" href="https://www.deviantart.com/yodajstarwars" target="_blank" rel="noopener">
+            <h3>My Grandpa Vic</h3>
+            <p class="art-card-meta">Digital · Family portrait</p>
+            <p>Drawing the people who made me.</p>
+          </a>
+          <a class="art-card" href="https://www.deviantart.com/yodajstarwars" target="_blank" rel="noopener">
+            <h3>Self Portrait</h3>
+            <p class="art-card-meta">Digital · Self-study</p>
+            <p>The hardest subject I've drawn.</p>
+          </a>
+        </div>
+
+        <p class="cluster-foot"><a class="link-arrow" href="https://www.deviantart.com/yodajstarwars" target="_blank" rel="noopener">See the full gallery on DeviantArt →</a></p>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-num">07</span>
+          <h2>Education &amp; Honors</h2>
+        </header>
+
+        <div class="edu-grid">
+          <div class="edu-card">
+            <h3>Drury University</h3>
+            <p class="edu-meta">Bachelor of Arts · 2002–2007 · Springfield, MO</p>
+            <p>Attended on a Presidential Scholarship and a Performance Grant. Coursework spanned algorithms, compiler theory, database design, operating systems, programming languages, systems analysis &amp; design, plus corporate policy &amp; ethics and strategic management.</p>
+            <ul class="bullets compact">
+              <li>Chair Award — outstanding achievement in Computer Science</li>
+              <li>Outstanding Graduate — Computer Information Systems (May 2007)</li>
+              <li>Outstanding Graduate — Computer Science (May 2007)</li>
+              <li>Math &amp; Computer Science Club; Orchestra; Allies</li>
+            </ul>
+          </div>
+
+          <div class="edu-card">
+            <h3>Languages &amp; Off-Hours</h3>
+            <ul class="bullets compact">
+              <li>Spanish — elementary proficiency</li>
+              <li>Volunteer mentor — Big Brothers Big Sisters of the Ozarks (2011–2013)</li>
+              <li>Reader: fantasy &amp; science fiction</li>
+              <li>Maker: digital painting, illustration, the occasional guitar</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-contact">
+      <div class="container">
+        <header class="section-head centered">
+          <span class="section-num">08</span>
+          <h2>Let's talk</h2>
+          <p class="section-sub">Hiring, speaking, mentoring, or just want to compare notes — my inbox is open.</p>
+        </header>
+
+        <div class="contact-block">
+          <a class="contact-primary" href="mailto:jason.m.lowenthal@gmail.com">
+            <span>jason.m.lowenthal@gmail.com</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+
+          <ul class="contact-links" aria-label="All profiles">
+            <li><a href="https://www.linkedin.com/in/jasonlowenthal/" target="_blank" rel="me noopener"><span class="cl-name">LinkedIn</span><span class="cl-handle">/in/jasonlowenthal</span></a></li>
+            <li><a href="https://github.com/jason-lowenthal-hershey" target="_blank" rel="me noopener"><span class="cl-name">GitHub (personal)</span><span class="cl-handle">@jason-lowenthal-hershey</span></a></li>
+            <li><a href="https://github.com/jason-codefi" target="_blank" rel="me noopener"><span class="cl-name">GitHub (work)</span><span class="cl-handle">@jason-codefi</span></a></li>
+            <li><a href="https://medium.com/@lowenthal_jason" target="_blank" rel="me noopener"><span class="cl-name">Medium</span><span class="cl-handle">@lowenthal_jason</span></a></li>
+            <li><a href="https://www.deviantart.com/yodajstarwars" target="_blank" rel="me noopener"><span class="cl-name">DeviantArt</span><span class="cl-handle">@yodajstarwars</span></a></li>
+            <li><a href="https://www.youtube.com/watch?v=T0V77fauPL8" target="_blank" rel="me noopener"><span class="cl-name">YouTube</span><span class="cl-handle">AIC 2018 talk</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>© <span id="year">2026</span> Jason Lowenthal-Hershey. Made by hand in Springfield, Missouri.</p>
+      <p class="footer-meta">
+        <a href="https://github.com/jason-lowenthal-hershey/jason-lowenthal-hershey.github.io" target="_blank" rel="noopener">View source</a>
+        <span aria-hidden="true">·</span>
+        <a href="#top">Back to top ↑</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
