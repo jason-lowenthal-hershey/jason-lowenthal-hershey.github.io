@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="dark light" />
+  <meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)" />
+
+  <title>A.R.I.A. — the Discord bot for Kyle Hill's [THE FACILITY] · Jason Lowenthal-Hershey</title>
+  <meta name="description" content="A.R.I.A. is a Python Discord bot I've built and maintained since 2021 for [THE FACILITY], science communicator Kyle Hill's community server. Hybrid slash commands, MongoDB-backed XP, NASA &amp; Wolfram Alpha integrations, and a Heroku CD pipeline." />
+  <meta name="author" content="Jason Lowenthal-Hershey" />
+  <link rel="canonical" href="https://jason-lowenthal-hershey.github.io/aria/" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="A.R.I.A. — the Discord bot for Kyle Hill's [THE FACILITY]" />
+  <meta property="og:description" content="A Python Discord bot I've built and maintained since 2021 for science communicator Kyle Hill's community. Hybrid commands, MongoDB-backed XP, NASA APOD, and more." />
+  <meta property="og:url" content="https://jason-lowenthal-hershey.github.io/aria/" />
+  <meta property="og:site_name" content="Jason Lowenthal-Hershey" />
+  <meta property="og:image" content="https://jason-lowenthal-hershey.github.io/assets/img/aria.jpg" />
+  <meta property="og:image:alt" content="A.R.I.A. — glitched, neon-tinted bot avatar for [THE FACILITY] Discord" />
+
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="mask-icon" href="/assets/img/favicon.svg" color="#f2a060" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-elevated="false">
+    <div class="container nav-row">
+      <a href="/" class="brand" aria-label="Back to home">
+        <span class="brand-mark" aria-hidden="true">JL<span class="brand-mark-h">H</span></span>
+        <span class="brand-name">Jason Lowenthal-Hershey</span>
+      </a>
+      <nav class="primary-nav" aria-label="Primary">
+        <a href="/#about">About</a>
+        <a href="/#experience">Experience</a>
+        <a href="/#projects">Projects</a>
+        <a href="/#writing">Writing</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" type="button" id="themeToggle" aria-label="Toggle color theme" aria-pressed="true">
+        <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.93 4.93l2.12 2.12M16.95 16.95l2.12 2.12M4.93 19.07l2.12-2.12M16.95 7.05l2.12-2.12"/></svg>
+        <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/></svg>
+      </button>
+      <button class="nav-toggle" type="button" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+      <a href="/#about">About</a>
+      <a href="/#experience">Experience</a>
+      <a href="/#projects">Projects</a>
+      <a href="/#writing">Writing</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section id="top" class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-grid"></div>
+        <div class="hero-glow"></div>
+      </div>
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">
+            <span class="dot"></span> Side project · Community bot for [THE FACILITY] · 2021–present
+          </p>
+          <h1 class="hero-title">
+            A.R.I.A. —<br />
+            the bot that's run Kyle Hill's Discord<br />
+            since <em>2021</em>.
+          </h1>
+          <p class="hero-lede">
+            <strong>A.R.I.A.</strong> is a Python Discord bot I built and
+            have maintained for nearly five years for
+            <a href="https://www.youtube.com/@kylehill" target="_blank" rel="noopener">Kyle Hill's</a>
+            community server, [THE FACILITY]. Hybrid slash + prefix commands,
+            MongoDB-backed profiles &amp; XP, NASA APOD and Wolfram Alpha
+            integrations, an interactive muffin generator with buttons and
+            dropdowns, a containment minigame, daily space images — and a
+            Heroku CD pipeline behind it all.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="https://github.com/jason-lowenthal-hershey/the-facility-discord-aria-bot" target="_blank" rel="noopener">
+              View on GitHub
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="/#projects">← Back to portfolio</a>
+          </div>
+        </div>
+        <div class="hero-portrait">
+          <div class="portrait-frame">
+            <img
+              src="/assets/img/aria.jpg"
+              alt="A.R.I.A. — glitched, neon-tinted portrait used as the bot's avatar in [THE FACILITY]"
+              width="460" height="460"
+              loading="eager"
+              decoding="async" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT IT DOES -->
+    <section id="features" class="section">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-num">01</span>
+          <h2>What it does</h2>
+          <p class="section-sub">A community bot built for a science-communication audience. It earns its place by being useful, on-theme, and fun to interact with.</p>
+        </header>
+
+        <div class="project-grid">
+
+          <article class="project-card">
+            <div class="project-tag">Engagement</div>
+            <h3>Interactive Muffin System</h3>
+            <p class="project-org">Buttons · Dropdowns · Ephemeral UI</p>
+            <p>
+              The community's signature gag: an ephemeral, customizable muffin
+              generator built on Discord's modern UI components. Users pick
+              flavor, topping, and presentation through buttons and selects;
+              the bot composes and delivers the result without spamming the
+              channel.
+            </p>
+            <ul class="chip-list compact">
+              <li>discord.py UI</li>
+              <li>Pillow</li>
+              <li>Ephemeral flows</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-tag">Education</div>
+            <h3>Science commands</h3>
+            <p class="project-org">NASA APOD · Wolfram Alpha</p>
+            <p>
+              On-demand astronomy and computation. <code>/spacepost</code>
+              triggers the daily space image with a fallback chain across
+              NASA's Astronomy Picture of the Day and an ESA RSS pool —
+              persisted to MongoDB so the same image never runs twice.
+              Wolfram Alpha integration handles ad-hoc science queries.
+            </p>
+            <ul class="chip-list compact">
+              <li>NASA APOD</li>
+              <li>ESA RSS</li>
+              <li>Wolfram Alpha</li>
+              <li>Dedup persistence</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-tag">Game</div>
+            <h3>Kevin containment</h3>
+            <p class="project-org">Persistent state · Community lore</p>
+            <p>
+              An interactive minigame riffing on the show's running bits.
+              Game state persists across bot restarts so a community-wide
+              session can stretch across days without losing progress.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <div class="project-tag">Identity</div>
+            <h3>XP, profiles &amp; badges</h3>
+            <p class="project-org">MongoDB-backed</p>
+            <p>
+              User profiles, leveling, and badges to recognize active
+              members. ETL helpers exist for migrating XP and badges
+              between environments — because a community of this size
+              actually needs that.
+            </p>
+            <ul class="chip-list compact">
+              <li>MongoDB</li>
+              <li>Aggregation pipelines</li>
+              <li>ETL scripts</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-tag">Operations</div>
+            <h3>Moderation tooling</h3>
+            <p class="project-org">For mods, by request</p>
+            <p>
+              Community management features built to support the moderator
+              team — user lookups, role workflows, and the unsexy operational
+              glue that keeps a server of this scale livable.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <div class="project-tag">DX</div>
+            <h3>Hybrid commands</h3>
+            <p class="project-org">Slash · Prefix · One implementation</p>
+            <p>
+              Every public command works as both a slash command
+              (<code>/muffin</code>) and a legacy prefix command
+              (<code>!ARIA --muffin</code>) through discord.py's hybrid
+              command framework — backwards-compatible with the muscle
+              memory of the original community while embracing the
+              modern interaction model.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- UNDER THE HOOD -->
+    <section id="stack" class="section section-alt">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-num">02</span>
+          <h2>Under the hood</h2>
+          <p class="section-sub">A real production system, not a hobby script. Tested, deployed, observed, and on its second major library migration.</p>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-prose">
+            <p>
+              A.R.I.A. is Python 3.10+ on top of <strong>discord.py 2.3.2</strong>,
+              with cogs split by domain (muffin, science, kevin, moderation,
+              admin, fun, utility) and a clean separation between command
+              handlers, services, and persistence. State lives in
+              <strong>MongoDB</strong> (via Motor), image work runs through
+              <strong>Pillow</strong>, and the test suite is
+              <strong>pytest</strong> with async support — including coverage
+              of the Discord interaction patterns themselves, which is
+              harder than it sounds.
+            </p>
+            <p>
+              The deployment story matches the engineering story: three
+              long-lived branches (<code>main</code> production,
+              <code>develop</code> staging, <code>agentic</code> active
+              development), automatic staging deploys, manual production
+              promotion, and a Heroku Procfile setup that's survived
+              multiple platform upgrades.
+            </p>
+            <blockquote class="pullquote">
+              <p>"Every public command works the modern way <em>and</em> the way the community already typed it. Backwards compatibility for muscle memory."</p>
+            </blockquote>
+            <p>
+              The codebase is also where I exercise practices I believe in:
+              SOLID-leaning structure, real test coverage for behavior I
+              actually care about, CI enforced linting and formatting
+              (Black, isort, flake8), and the discipline of cleanup commits
+              that don't add features but make the next change easier.
+            </p>
+          </div>
+
+          <aside class="about-side">
+            <div class="card">
+              <h3>Tech stack</h3>
+              <ul class="chip-list">
+                <li>Python 3.10+</li>
+                <li>discord.py 2.3.2</li>
+                <li>MongoDB / Motor</li>
+                <li>Pillow</li>
+                <li>pytest (async)</li>
+                <li>NASA APOD API</li>
+                <li>Wolfram Alpha</li>
+                <li>Heroku</li>
+                <li>Black · isort · flake8</li>
+              </ul>
+            </div>
+            <div class="card facts">
+              <dl>
+                <div><dt>Started</dt><dd>October 2021</dd></div>
+                <div><dt>Commits</dt><dd>288 and counting</dd></div>
+                <div><dt>Code</dt><dd>~13.3k lines · 88 modules</dd></div>
+                <div><dt>Environments</dt><dd>prod · staging · dev</dd></div>
+                <div><dt>Deploy</dt><dd>Heroku CD</dd></div>
+                <div><dt>License</dt><dd>MIT</dd></div>
+              </dl>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE COMMUNITY -->
+    <section id="community" class="section">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-num">03</span>
+          <h2>Built for a community worth showing up for</h2>
+          <p class="section-sub">A short, important note about the people this bot exists for.</p>
+        </header>
+
+        <div class="edu-grid">
+          <div class="edu-card">
+            <h3>[THE FACILITY] &amp; Kyle Hill</h3>
+            <p class="edu-meta">Science communicator · YouTube · Patreon</p>
+            <p>
+              Kyle Hill is a science communicator whose YouTube channel
+              covers everything from nuclear history (his <em>Half-Life
+              Histories</em> series) to the physics behind pop culture.
+              [THE FACILITY] is the Discord community that grew up around
+              that work — the audience this bot is built to serve.
+            </p>
+            <p>
+              I'm an engineer who happens to be a fan; A.R.I.A. is mine,
+              but the show is Kyle's. If this page is the first you've
+              heard of him, the right next click is his channel — and if
+              you want to support what he makes, his Patreon is where to do it.
+            </p>
+            <ul class="bullets compact">
+              <li><a href="https://www.youtube.com/@kylehill" target="_blank" rel="noopener">YouTube — youtube.com/@kylehill</a></li>
+              <li><a href="https://www.patreon.com/kylehill" target="_blank" rel="noopener">Patreon — patreon.com/kylehill</a></li>
+            </ul>
+          </div>
+
+          <div class="edu-card">
+            <h3>What I take from this project</h3>
+            <ul class="bullets compact">
+              <li>Long-lived community software has its own design pressures — backwards compatibility for muscle memory, persistent game state, ETL between environments.</li>
+              <li>Discord's interaction model rewards small, ephemeral, highly-focused UIs over walls of text.</li>
+              <li>Free time is the most honest test of what you actually believe about software craft.</li>
+              <li>Building for an audience that isn't paying you keeps the work calibrated to whether it's any good.</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="cluster-foot">
+          <a class="link-arrow" href="https://github.com/jason-lowenthal-hershey/the-facility-discord-aria-bot" target="_blank" rel="noopener">Read the source on GitHub →</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- BACK -->
+    <section class="section section-contact">
+      <div class="container">
+        <header class="section-head centered">
+          <span class="section-num">04</span>
+          <h2>That's the side project.</h2>
+          <p class="section-sub">The day job, the writing, the talks, and the rest of the work live on the main page.</p>
+        </header>
+
+        <div class="contact-block">
+          <a class="contact-primary" href="/">
+            <span>← Back to jason-lowenthal-hershey.github.io</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>© <span id="year">2026</span> Jason Lowenthal-Hershey. Made by hand in Springfield, Missouri.</p>
+      <p class="footer-meta">
+        <a href="https://github.com/jason-lowenthal-hershey/the-facility-discord-aria-bot" target="_blank" rel="noopener">A.R.I.A. on GitHub</a>
+        <span aria-hidden="true">·</span>
+        <a href="/">Home</a>
+        <span aria-hidden="true">·</span>
+        <a href="#top">Back to top ↑</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>
