@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Work Expansion - May 12, 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --text: #2c3e50;
+            --text-light: #7f8c8d;
+            --border: #bdc3c7;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+            line-height: 1.8;
+            color: var(--text);
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        header .date {
+            font-size: 1rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        header .subtitle {
+            font-size: 1.3rem;
+            margin-top: 1rem;
+            opacity: 0.95;
+            font-weight: 400;
+        }
+
+        main {
+            padding: 3rem 2rem;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid var(--light);
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.2rem;
+            color: var(--primary);
+            position: relative;
+            padding-left: 1rem;
+        }
+
+        .section h2::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(180deg, var(--secondary), var(--accent));
+            border-radius: 2px;
+        }
+
+        .section h3 {
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            color: var(--secondary);
+            font-weight: 600;
+        }
+
+        .section p {
+            margin-bottom: 1rem;
+            color: var(--text);
+            line-height: 1.9;
+        }
+
+        .section ul, .section ol {
+            margin: 1rem 0 1rem 2rem;
+            color: var(--text);
+        }
+
+        .section li {
+            margin-bottom: 0.6rem;
+            line-height: 1.7;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(52, 152, 219, 0.1) 0%, rgba(231, 76, 60, 0.05) 100%);
+            border-left: 4px solid var(--secondary);
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin: 1.5rem 0;
+            font-style: italic;
+        }
+
+        .insight-card {
+            background: var(--light);
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .insight-card strong {
+            color: var(--secondary);
+        }
+
+        .key-points {
+            display: grid;
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .key-point {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .key-point::before {
+            content: '→';
+            color: var(--secondary);
+            font-weight: bold;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .key-point p {
+            margin: 0;
+        }
+
+        .quote {
+            border-left: 4px solid var(--accent);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-size: 1.05rem;
+            color: var(--text);
+            font-style: italic;
+        }
+
+        .references {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 2px dashed var(--border);
+        }
+
+        .references h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .references a {
+            display: block;
+            margin-bottom: 0.8rem;
+            color: var(--secondary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            word-break: break-word;
+        }
+
+        .references a:hover {
+            color: var(--accent);
+            padding-left: 0.5rem;
+        }
+
+        .footer {
+            background: var(--light);
+            padding: 2rem;
+            text-align: center;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            header .subtitle {
+                font-size: 1.1rem;
+            }
+
+            main {
+                padding: 2rem 1.5rem;
+            }
+
+            .section h2 {
+                font-size: 1.5rem;
+            }
+
+            .section h3 {
+                font-size: 1.1rem;
+            }
+        }
+
+        /* Dark mode support */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            }
+
+            .container {
+                background: #2d2d2d;
+                color: #e0e0e0;
+            }
+
+            .section h2, .section h3 {
+                color: #e0e0e0;
+            }
+
+            .insight-card {
+                background: #3d3d3d;
+                border-color: #555;
+            }
+
+            .references {
+                border-top-color: #555;
+            }
+
+            .section {
+                border-bottom-color: #444;
+            }
+
+            .highlight-box {
+                background: rgba(52, 152, 219, 0.15);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weekly Work Expansion</h1>
+            <div class="date">May 12, 2026</div>
+            <div class="subtitle">
+                <!-- TITLE: Replace with your week's main theme/insight -->
+                The Space Between Solutions
+            </div>
+        </header>
+
+        <main>
+            <!-- ========================================
+                 SECTION 1: THE HOOK
+                 Purpose: Draw reader in with personal observation
+                 ======================================== -->
+            <section class="section">
+                <h2>The Opening</h2>
+                <p>
+                    <!-- WRITE: Start with a personal observation or question that hooks the reader.
+                         Examples: "Recently, I found myself wrestling with...", "The team was working on something interesting..."
+                         Keep it conversational and human. 150-250 words. -->
+                </p>
+                <div class="highlight-box">
+                    <!-- OPTIONAL: Pull out a compelling quote or statement from your week -->
+                </div>
+            </section>
+
+            <!-- ========================================
+                 SECTION 2: THE PROBLEM/CONTEXT
+                 Purpose: Explain what happened and why it mattered
+                 ======================================== -->
+            <section class="section">
+                <h2>What We Were Working On</h2>
+                <p>
+                    <!-- WRITE: Describe the challenge or situation in human terms.
+                         Focus on: What were we wrestling with? Why did it matter?
+                         Avoid: Specific tech details, tool names, implementation specifics
+                         200-300 words -->
+                </p>
+
+                <h3>The Initial Situation</h3>
+                <p>
+                    <!-- WRITE: What was the starting point? What did we think would happen? -->
+                </p>
+
+                <h3>What Changed</h3>
+                <p>
+                    <!-- WRITE: What unexpected discovery or problem emerged? -->
+                </p>
+            </section>
+
+            <!-- ========================================
+                 SECTION 3: THE THINKING/APPROACH
+                 Purpose: Show HOW the team approached it, not WHAT they used
+                 ======================================== -->
+            <section class="section">
+                <h2>How We Thought Through It</h2>
+                <p>
+                    <!-- WRITE: What was our reasoning? What principles guided us?
+                         Focus on: decision-making process, tradeoffs, collaboration
+                         This should feel introspective and curious. 200-300 words -->
+                </p>
+
+                <div class="insight-card">
+                    <strong>Key Insight:</strong>
+                    <!-- WRITE: Briefly capture one important realization from the process -->
+                </div>
+
+                <h3>The Competing Priorities</h3>
+                <div class="key-points">
+                    <!-- ADD: Each competing need or constraint the team faced -->
+                    <div class="key-point">
+                        <p>
+                            <!-- EXAMPLE: "The button needed to be visible (primary CTA)" -->
+                        </p>
+                    </div>
+                    <div class="key-point">
+                        <p>
+                            <!-- EXAMPLE: "The content needed to be readable (or it wouldn't matter)" -->
+                        </p>
+                    </div>
+                    <div class="key-point">
+                        <p>
+                            <!-- EXAMPLE: "The screen space was fixed (we couldn't change that)" -->
+                        </p>
+                    </div>
+                </div>
+
+                <h3>Collaboration in Action</h3>
+                <p>
+                    <!-- WRITE: How did team members contribute? What made the collaboration effective?
+                         Name people, share moments of how you worked together.
+                         Keep it warm and genuine. 150-200 words -->
+                </p>
+            </section>
+
+            <!-- ========================================
+                 SECTION 4: WHAT YOU LEARNED
+                 Purpose: Extract broader meaning from the experience
+                 ======================================== -->
+            <section class="section">
+                <h2>What This Taught Us</h2>
+                <p>
+                    <!-- WRITE: What insights emerged? What do you understand differently now?
+                         This is where you move from specific story to broader principle.
+                         200-250 words -->
+                </p>
+
+                <h3>About Problem-Solving</h3>
+                <p>
+                    <!-- WRITE: What did this reveal about how you/your team approaches challenges? -->
+                </p>
+
+                <h3>About Constraints</h3>
+                <p>
+                    <!-- WRITE: How do constraints actually help rather than hinder?
+                         What do they teach you? -->
+                </p>
+
+                <h3>About Working Together</h3>
+                <p>
+                    <!-- WRITE: What matters most when teams collaborate?
+                         What makes the difference between good and great teamwork? -->
+                </p>
+            </section>
+
+            <!-- ========================================
+                 SECTION 5: WHY IT MATTERS
+                 Purpose: Connect the dots for the reader
+                 ======================================== -->
+            <section class="section">
+                <h2>Why This Matters</h2>
+                <p>
+                    <!-- WRITE: So what? Why should people care about this?
+                         Connect your week's work to something bigger about product thinking,
+                         team culture, or how you build things.
+                         200-250 words -->
+                </p>
+
+                <div class="highlight-box">
+                    <!-- WRITE: A reflection on what this says about how your team works
+                         or what it reveals about building products that matter -->
+                </div>
+            </section>
+
+            <!-- ========================================
+                 SECTION 6: CLOSING THOUGHTS
+                 Purpose: Return to where you started, but with new perspective
+                 ======================================== -->
+            <section class="section">
+                <h2>Looking Back</h2>
+                <p>
+                    <!-- WRITE: Reflect on the experience. Bring it back to the opening theme.
+                         Show growth or new understanding.
+                         This should feel personal and thoughtful. 150-200 words -->
+                </p>
+
+                <p>
+                    <!-- WRITE: Final thought tying it all together.
+                         Leave the reader with something to think about or a sense of
+                         what you're excited about going forward. -->
+                </p>
+            </section>
+
+            <!-- ========================================
+                 REFERENCES
+                 Purpose: Back up your thinking with outside sources
+                 ======================================== -->
+            <section class="references">
+                <h3>References & Further Reading</h3>
+                <!-- ADD: 2-5 relevant sources that informed or relate to your thinking -->
+                <a href="#">Source Title - Author or Publication</a>
+                <a href="#">Another Source - Author or Publication</a>
+                <a href="#">Optional: Industry Article or Paper</a>
+            </section>
+        </main>
+
+        <div class="footer">
+            <p>A weekly reflection on building, thinking, and working with a thoughtful team.</p>
+            <p style="margin-top: 1rem; font-size: 0.85rem;">
+                <!-- OPTIONAL: Add social links, about page, or other nav here -->
+            </p>
+        </div>
+    </div>
+</body>
+</html>

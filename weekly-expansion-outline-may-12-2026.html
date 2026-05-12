@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Work Expansion - May 12, 2026 (OUTLINE)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --text: #2c3e50;
+            --text-light: #7f8c8d;
+            --border: #bdc3c7;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+            line-height: 1.8;
+            color: var(--text);
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        header .date {
+            font-size: 1rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        header .subtitle {
+            font-size: 1.3rem;
+            margin-top: 1rem;
+            opacity: 0.95;
+            font-weight: 400;
+        }
+
+        header .status {
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            background: rgba(255,255,255,0.2);
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+
+        main {
+            padding: 3rem 2rem;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid var(--light);
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.2rem;
+            color: var(--primary);
+            position: relative;
+            padding-left: 1rem;
+        }
+
+        .section h2::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(180deg, var(--secondary), var(--accent));
+            border-radius: 2px;
+        }
+
+        .section h3 {
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            color: var(--secondary);
+            font-weight: 600;
+        }
+
+        .outline-block {
+            background: linear-gradient(135deg, rgba(52, 152, 219, 0.08) 0%, rgba(231, 76, 60, 0.03) 100%);
+            border-left: 4px solid var(--secondary);
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin: 1rem 0;
+        }
+
+        .outline-block p {
+            margin: 0 0 0.8rem 0;
+            color: var(--text);
+            font-style: italic;
+        }
+
+        .outline-block p:last-child {
+            margin-bottom: 0;
+        }
+
+        .outline-block ul {
+            margin: 0.8rem 0 0 1.5rem;
+            padding: 0;
+        }
+
+        .outline-block li {
+            margin-bottom: 0.5rem;
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .callout {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem 1.5rem;
+            border-radius: 4px;
+            margin: 1.5rem 0;
+        }
+
+        .callout strong {
+            color: var(--primary);
+        }
+
+        .word-count {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            font-weight: 500;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px dashed var(--border);
+        }
+
+        .key-moments {
+            background: var(--light);
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .key-moments h4 {
+            color: var(--secondary);
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        .key-moments ul {
+            margin: 0 0 0 1.5rem;
+            padding: 0;
+        }
+
+        .key-moments li {
+            margin-bottom: 0.8rem;
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        .footer {
+            background: var(--light);
+            padding: 2rem;
+            text-align: center;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            header .subtitle {
+                font-size: 1.1rem;
+            }
+
+            main {
+                padding: 2rem 1.5rem;
+            }
+
+            .section h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            }
+
+            .container {
+                background: #2d2d2d;
+                color: #e0e0e0;
+            }
+
+            .section h2, .section h3 {
+                color: #e0e0e0;
+            }
+
+            .section {
+                border-bottom-color: #444;
+            }
+
+            .outline-block {
+                background: rgba(52, 152, 219, 0.15);
+                color: #e0e0e0;
+            }
+
+            .outline-block li, .outline-block p {
+                color: #e0e0e0;
+            }
+
+            .key-moments {
+                background: #3d3d3d;
+                border-color: #555;
+                color: #e0e0e0;
+            }
+
+            .key-moments li {
+                color: #e0e0e0;
+            }
+
+            .callout {
+                background: rgba(255, 193, 7, 0.1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weekly Work Expansion</h1>
+            <div class="date">May 12, 2026</div>
+            <div class="subtitle">
+                The Space Between Solutions: On Constraints, Collaboration, and Fixing One Thing
+            </div>
+            <div class="status">OUTLINE - Ready to Write</div>
+        </header>
+
+        <main>
+            <!-- ========================================
+                 SECTION 1: THE OPENING
+                 ======================================== -->
+            <section class="section">
+                <h2>1. The Opening</h2>
+                <div class="outline-block">
+                    <p><strong>Goal:</strong> Hook the reader with a personal observation about transitions or fixing something that seems simple but gets complicated.</p>
+                    <p><strong>Angle:</strong> Start with the idea of "invisible problems" - when fixing one thing creates another issue unexpectedly.</p>
+                    <ul>
+                        <li>Personal reflection on how one small fix can cascade</li>
+                        <li>The moment you realized "wait, now we have a different problem"</li>
+                        <li>Lead into: this week was about that exact experience</li>
+                    </ul>
+                </div>
+                <div class="word-count">Target: 150-250 words</div>
+            </section>
+
+            <!-- ========================================
+                 SECTION 2: CONTEXT/THE PROBLEM
+                 ======================================== -->
+            <section class="section">
+                <h2>2. What We Were Working On</h2>
+                
+                <h3>Initial Context</h3>
+                <div class="outline-block">
+                    <p><strong>Setting:</strong> The R2L (Ready-to-Launch) completion screen - that transition moment when users move to the next phase.</p>
+                    <ul>
+                        <li>What is this screen's job? (communicate what's happening next, guide users forward)</li>
+                        <li>Why does it matter? (it's a critical moment in the user journey)</li>
+                        <li>The starting point: works great on desktop, broken on mobile</li>
+                    </ul>
+                </div>
+
+                <h3>The Initial Fix</h3>
+                <div class="outline-block">
+                    <p><strong>What happened:</strong> You made a clean fix that adjusted spacing and repositioned elements.</p>
+                    <ul>
+                        <li>The fix felt right - button visible, text breathing properly</li>
+                        <li>Looked good on your screen</li>
+                        <li>Pushed to staging feeling satisfied</li>
+                    </ul>
+                </div>
+
+                <h3>What Liza Found</h3>
+                <div class="outline-block">
+                    <p><strong>The discovery:</strong> Your QA partner's video revealed the cascading problem.</p>
+                    <ul>
+                        <li>The progress indicator moved above the content</li>
+                        <li>Now it was cutting off text users needed to read</li>
+                        <li>You'd solved one problem by creating another</li>
+                    </ul>
+                    <div class="key-moments">
+                        <h4>Key Moment to Capture:</h4>
+                        <ul>
+                            <li>Your honest reaction: "GAH! How did I miss that?"</li>
+                            <li>Liza's kind response about you juggling a lot</li>
+                            <li>The humanity of that exchange - good teams hold space for missing things</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="word-count">Target: 200-300 words</div>
+            </section>
+
+            <!-- ========================================
+                 SECTION 3: THE THINKING
+                 ======================================== -->
+            <section class="section">
+                <h2>3. How We Thought Through It</h2>
+
+                <h3>The Three Competing Needs</h3>
+                <div class="outline-block">
+                    <p><strong>The core problem:</strong> Three essential things fighting for limited space.</p>
+                    <ul>
+                        <li><strong>Button visibility:</strong> Primary CTA can't be hidden/scrolled off</li>
+                        <li><strong>Content readability:</strong> Text needs to be legible and not cramped</li>
+                        <li><strong>Fixed viewport:</strong> Can't change the screen space itself</li>
+                    </ul>
+                    <p style="margin-top: 1rem;"><em>The real insight: you can't have it all, so what matters most?</em></p>
+                </div>
+
+                <h3>The Collaborative Process</h3>
+                <div class="outline-block">
+                    <p><strong>How you worked through it:</strong></p>
+                    <ul>
+                        <li>Reached out to Shantanu (design) rather than deciding alone</li>
+                        <li>Explored possibilities together: scrolling within card? Reorganize? Make button scrollable?</li>
+                        <li>Talked through tradeoffs rather than just picking one</li>
+                        <li>Decided: make just the screenshot scrollable, keep button and copy fixed</li>
+                    </ul>
+                    <div class="key-moments">
+                        <h4>Collaboration Moments to Highlight:</h4>
+                        <ul>
+                            <li>The back-and-forth with Shantanu about what matters</li>
+                            <li>How you both prioritized button visibility as non-negotiable</li>
+                            <li>The willingness to explore multiple solutions</li>
+                            <li>Testing the approach, getting feedback, iterating</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>The Bigger Thinking</h3>
+                <div class="outline-block">
+                    <p><strong>What guided your approach:</strong></p>
+                    <ul>
+                        <li>Not seeing constraint as problem, but as information</li>
+                        <li>Asking "what do we really need here?" instead of "how do we fit it all?"</li>
+                        <li>Treating the mobile viewport not as an obstacle, but as a teacher</li>
+                    </ul>
+                </div>
+
+                <div class="word-count">Target: 200-300 words</div>
+            </section>
+
+            <!-- ========================================
+                 SECTION 4: WHAT YOU LEARNED
+                 ======================================== -->
+            <section class="section">
+                <h2>4. What This Taught Us</h2>
+
+                <h3>About Constraints</h3>
+                <div class="outline-block">
+                    <p><strong>Key insight:</strong> Constraints aren't failures of planning - they're information.</p>
+                    <ul>
+                        <li>The mobile viewport forced clarity you might not have found otherwise</li>
+                        <li>Limited space made you ask "what's essential?"</li>
+                        <li>The constraint revealed what truly matters in the user experience</li>
+                    </ul>
+                </div>
+
+                <h3>About Teamwork</h3>
+                <div class="outline-block">
+                    <p><strong>What made the difference:</strong></p>
+                    <ul>
+                        <li>Liza's thoroughness (the video, the detail)</li>
+                        <li>Her kindness in acknowledging you're juggling a lot</li>
+                        <li>Shantanu engaging with it as a design challenge, not a dev problem</li>
+                        <li>Everyone thinking about what was actually right, not what was easiest</li>
+                    </ul>
+                    <div class="callout">
+                        <strong>Quote to consider:</strong> "You have a ton happening at once right now, friend." - This captures something important about how good teams hold space for each other's limits.
+                    </div>
+                </div>
+
+                <h3>About Problem-Solving</h3>
+                <div class="outline-block">
+                    <p><strong>The pattern you see:</strong></p>
+                    <ul>
+                        <li>Problems don't have one "right" answer - they have tradeoffs</li>
+                        <li>The best solution balances competing needs thoughtfully</li>
+                        <li>Collaboration isn't just nice - it catches what individuals miss</li>
+                        <li>Iteration isn't failure - it's how you discover the right thing</li>
+                    </ul>
+                </div>
+
+                <div class="word-count">Target: 200-250 words</div>
+            </section>
+
+            <!-- ========================================
+                 SECTION 5: WHY IT MATTERS
+                 ======================================== -->
+            <section class="section">
+                <h2>5. Why This Matters</h2>
+
+                <div class="outline-block">
+                    <p><strong>Connect to bigger picture:</strong> This wasn't just about one screen. It reveals how your team approaches all problems.</p>
+                    <ul>
+                        <li><strong>To people considering working with Codefi:</strong> This shows how thoughtfully you approach trade-offs</li>
+                        <li><strong>To builders/teams everywhere:</strong> Constraints are gifts, not obstacles</li>
+                        <li><strong>To the industry:</strong> Building great products requires both individual skill AND collaborative thinking</li>
+                    </ul>
+
+                    <p style="margin-top: 1rem;"><strong>The broader insight:</strong> What you're really showing is that excellence comes from:</p>
+                    <ul>
+                        <li>Seeing constraint as information, not failure</li>
+                        <li>Trusting your team enough to ask for help</li>
+                        <li>Caring more about what's right than what's easy</li>
+                        <li>Holding space for each other's humanity while doing precise work</li>
+                    </ul>
+                </div>
+
+                <div class="word-count">Target: 200-250 words</div>
+            </section>
+
+            <!-- ========================================
+                 SECTION 6: CLOSING
+                 ======================================== -->
+            <section class="section">
+                <h2>6. Looking Back</h2>
+
+                <div class="outline-block">
+                    <p><strong>Bring it back around:</strong> Return to your opening about invisible problems and cascading fixes.</p>
+                    <ul>
+                        <li>This week showed you that "something going wrong" can be the moment something goes right</li>
+                        <li>The cascade of issues wasn't a failure - it was how you discovered what mattered</li>
+                        <li>Working through problems together is what builds trust and capability</li>
+                    </ul>
+
+                    <p style="margin-top: 1rem;"><strong>Final reflection:</strong></p>
+                    <ul>
+                        <li>What you're excited about (the team, the approach, what's coming next)</li>
+                        <li>Why this week felt significant</li>
+                        <li>What you hope readers take from this</li>
+                    </ul>
+
+                    <p style="margin-top: 1rem;"><em>End with something memorable about how you work together or what you're building.</em></p>
+                </div>
+
+                <div class="word-count">Target: 150-200 words</div>
+            </section>
+
+            <!-- ========================================
+                 REFERENCES
+                 ======================================== -->
+            <section class="section">
+                <h2>References & Resources</h2>
+                <div class="outline-block">
+                    <p><strong>Suggested sources to include:</strong></p>
+                    <ul>
+                        <li>The Design of Everyday Things by Donald Norman (on constraints as design info)</li>
+                        <li>Constraints Breed Creativity - 99U article</li>
+                        <li>Team Collaboration & Psychological Safety - Amy Edmondson TED talk</li>
+                        <li>Responsive Design Principles - Luke Wroblewski</li>
+                    </ul>
+                    <p style="margin-top: 1rem;"><em>Or find sources that specifically resonated with your thinking this week.</em></p>
+                </div>
+            </section>
+
+            <!-- ========================================
+                 WRITING TIPS FOR THIS PIECE
+                 ======================================== -->
+            <section class="section">
+                <h2>Writing Tips Specific to This Week</h2>
+                <div class="callout">
+                    <strong>Voice reminders:</strong>
+                    <ul style="margin-top: 0.5rem; margin-left: 1.5rem;">
+                        <li>Personal and warm - you're reflecting, not lecturing</li>
+                        <li>Show your thinking process - readers want to see HOW you approach problems</li>
+                        <li>Celebrate your team - Liza, Shantanu, and the whole team made this work</li>
+                        <li>Be curious about what the week taught you</li>
+                    </ul>
+                </div>
+
+                <div class="callout" style="background: #d4edda; border-left-color: #28a745;">
+                    <strong>Moments to specifically capture:</strong>
+                    <ul style="margin-top: 0.5rem; margin-left: 1.5rem;">
+                        <li>Liza's video showing the problem (moment of discovery)</li>
+                        <li>Your honest "GAH! How did I miss that?" reaction (humanness)</li>
+                        <li>Liza's kind response (team culture)</li>
+                        <li>Conversation with Shantanu about possibilities (collaboration)</li>
+                        <li>The decision to prioritize button visibility (values)</li>
+                    </ul>
+                </div>
+
+                <div class="callout" style="background: #f8d7da; border-left-color: #dc3545;">
+                    <strong>Avoid:</strong>
+                    <ul style="margin-top: 0.5rem; margin-left: 1.5rem;">
+                        <li>Specific tech stack or tools (use "data store" not "PostgreSQL")</li>
+                        <li>Internal jargon without explanation</li>
+                        <li>Too much technical detail about the implementation</li>
+                        <li>Making it sound like you had it all figured out (you didn't - that's the point!)</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <div class="footer">
+            <p>This is an outline ready for you to write from. Use the word counts as targets, but don't stress about hitting them exactly.</p>
+            <p style="margin-top: 1rem; font-size: 0.85rem;">
+                Total essay target: ~1500 words | All sections: ~1300 words + references
+            </p>
+        </div>
+    </div>
+</body>
+</html>
